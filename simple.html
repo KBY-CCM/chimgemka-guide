@@ -7,7 +7,7 @@
 <meta name="description" content="침착맨 포토 게임 카드 심플 룰. 카드를 한 줄에 번갈아 내며 밀고 들어가는 가위바위보 게임입니다.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -41,6 +41,12 @@
 </section>
 
 <section>
+  <div class="sec-head"><span class="label or">VIDEO</span><h2>플레이 영상으로 이해하기</h2>
+  <p class="muted">침착맨이 심플 룰로 직접 플레이하는 영상입니다. 실제 대결이 시작되는 12분부터 재생됩니다.</p></div>
+  <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/kpUqgGmwuBw?start=720" title="침착맨 심플 룰 플레이 영상" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+</section>
+
+<section>
   <div class="sec-head"><span class="label">READY</span><h2>준비</h2></div>
   <ul class="plain">
     <li>1:1로 합니다. 각자 카드 <b>10장</b>을 고릅니다.</li>
@@ -49,27 +55,6 @@
     <li>전투카드 7장은 손에 들고, 특수카드 3장은 <b>뒷면으로 따로 놓아 둡니다.</b></li>
   </ul>
   <div class="note"><b>SSR 카드는 심플 룰에서 사용할 수 없습니다.</b> 가위바위보를 마음대로 고를 수 있어 승부가 한쪽으로 기울기 때문입니다. SSR의 힘은 <a href="advanced.html">고급 룰</a>에서 확인해 보세요.</div>
-</section>
-
-<section>
-  <div class="sec-head"><span class="label">PLAY MAT</span><h2>플레이 매트 쓰는 법</h2>
-  <p class="muted">고급 룰용 플레이 매트를 그대로 씁니다. 서로 마주 보고 매트를 놓으면 두 사람의 윗줄이 이어져 외줄 6칸이 됩니다.</p></div>
-  <div class="board">
-    <div class="sides"><span class="o">◀ 상대 매트</span><span class="m">내 매트 ▶</span></div>
-    <div class="lane"><div class="c sp o">특수<br>대기</div><div class="c sp o">특수<br>대기</div><div class="c sp o">특수<br>대기</div><div class="c x"></div><div class="c x"></div><div class="c x"></div></div>
-    <div class="lane"><div class="c bf o">윗줄</div><div class="c bf o">윗줄</div><div class="c bf o">윗줄</div><div class="c x"></div><div class="c x"></div><div class="c x"></div></div>
-    <div class="seam"><span>매트가 맞닿는 선</span></div>
-    <div class="lane"><div class="c x"></div><div class="c x"></div><div class="c x"></div><div class="c bf m">윗줄</div><div class="c bf m">윗줄</div><div class="c bf m">윗줄</div></div>
-    <div class="lane"><div class="c x"></div><div class="c x"></div><div class="c x"></div><div class="c sp m">특수<br>대기</div><div class="c sp m">특수<br>대기</div><div class="c sp m">특수<br>대기</div></div>
-    <p class="cap">상대 윗줄 3칸과 내 윗줄 3칸이 맞닿는 선을 사이에 두고 이어집니다. 이 6칸이 <b>외줄</b>입니다.</p>
-  </div>
-  <ul class="plain">
-    <li><b>윗줄(전투 구역) 3칸</b>만 싸움터로 씁니다.</li>
-    <li><b>아랫줄(특수 구역) 3칸</b>은 특수카드 3장을 뒷면으로 놓아 두는 대기 자리입니다. 쓸 때 꺼내서 냅니다.</li>
-    <li>진 카드와 쓴 특수카드는 매트의 <b>무덤</b>에 둡니다.</li>
-    <li>매트가 없어도 됩니다. 책상 위에 카드 6장이 한 줄로 놓일 자리만 있으면 돼요.</li>
-  </ul>
-  <figure class="fig"><img src="img/rb04.webp" width="1200" height="640" alt="플레이 매트 구성. 전투구역 3칸, 특수구역 3칸, 무덤, 손패 위치가 표시되어 있다." loading="lazy"></figure>
 </section>
 
 <section>
@@ -156,7 +141,6 @@
   </table></div>
   <div class="panel ex">
     <h3>예시</h3>
-    <p><b>크루시오!!</b> <q>"내 선두가 죽으면 상대의 셋째 카드도 죽는다"</q><br>→ 외줄에서 상대 선두로부터 세 번째 카드가 무덤으로 갑니다.</p>
     <p><b>오!마이아이즈!</b> <q>"상대의 선두를 특수구역 빈자리로. 자리가 없으면 손패로"</q><br>→ 전투카드는 특수 구역에 들어갈 수 없으니 상대 선두가 손패로 돌아갑니다.</p>
     <p><b>뿔난이병건</b> <q>"다음 턴, 상대는 특수카드를 발동할 수 없다"</q><br>→ 바로 다음 상대 차례에 상대는 특수카드를 낼 수 없습니다.</p>
     <p><b>Medium 병건&amp;세화</b> <q>"전장의 모든 카드를 손패로 되돌린다. 각자 카드를 재배치한다"</q><br>→ 외줄 위 카드가 모두 각자 손으로 돌아갑니다. 게임을 시작할 때처럼 각자 끝 칸에 한 장씩 놓고 동시에 공개한 뒤 이어갑니다. 무덤에 간 카드는 돌아오지 않습니다.</p>
@@ -204,11 +188,26 @@
 </section>
 
 <section>
-  <div class="sec-head"><span class="label or">VIDEO</span><h2>플레이 영상</h2>
-  <p class="muted">침착맨이 심플 룰로 직접 플레이하는 영상입니다. 12분쯤부터 실제 대결이 시작됩니다.</p></div>
+  <div class="sec-head"><span class="label">PLAY MAT</span><h2>플레이 매트가 있다면</h2></div>
+  <div class="matrow">
+    <div class="board mini" aria-hidden="true">
+      <div class="lane"><div class="c sp o">특수</div><div class="c sp o">특수</div><div class="c sp o">특수</div><div class="c x"></div><div class="c x"></div><div class="c x"></div></div>
+      <div class="lane"><div class="c bf o">윗줄</div><div class="c bf o">윗줄</div><div class="c bf o">윗줄</div><div class="c x"></div><div class="c x"></div><div class="c x"></div></div>
+      <div class="lane"><div class="c x"></div><div class="c x"></div><div class="c x"></div><div class="c bf m">윗줄</div><div class="c bf m">윗줄</div><div class="c bf m">윗줄</div></div>
+      <div class="lane"><div class="c x"></div><div class="c x"></div><div class="c x"></div><div class="c sp m">특수</div><div class="c sp m">특수</div><div class="c sp m">특수</div></div>
+    </div>
+    <ul class="plain">
+      <li>서로 마주 보고 매트를 놓으면 두 사람의 <b>윗줄 3칸씩이 이어져 외줄 6칸</b>이 됩니다.</li>
+      <li><b>아랫줄 3칸</b>은 특수카드 3장을 뒷면으로 놓아 두는 자리로 씁니다.</li>
+      <li>매트가 없어도 됩니다. 카드 6장이 한 줄로 놓일 자리만 있으면 돼요.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
   <div class="btns">
-    <a class="btn" href="https://youtu.be/kpUqgGmwuBw" target="_blank" rel="noopener">영상 보러 가기 →</a>
-    <a class="btn ghost" href="advanced.html">고급 Ver도 보기</a>
+    <a class="btn" href="advanced.html">고급 Ver도 보기 →</a>
+    <a class="btn ghost" href="./">처음으로</a>
   </div>
 </section>
 
