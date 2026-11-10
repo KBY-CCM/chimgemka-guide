@@ -112,6 +112,14 @@ a.pick.s .go{background:var(--cyan)} a.pick.a .go{background:var(--pink)}
 .seam{height:0;border-top:2px dashed #4a4458;margin:2px 0;position:relative}
 .seam span{position:absolute;left:50%;top:-10px;transform:translateX(-50%);background:#000;padding:0 8px;font-size:11.5px;color:var(--muted);font-weight:700;white-space:nowrap}
 
+/* 더 보기 카드 */
+a.more{display:flex;flex-direction:column;gap:6px;justify-content:flex-end;text-decoration:none;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;min-width:0;min-height:150px}
+a.more:hover{border-color:var(--yellow)}
+a.more img{border-radius:10px;margin-bottom:8px}
+a.more .t{font-family:var(--display);font-size:24px;line-height:1.2;color:var(--yellow)}
+a.more .s{color:var(--muted);font-size:15px}
+a.more.buy{background:linear-gradient(150deg,rgba(255,46,139,.22),var(--panel) 60%)}
+
 /* 영상 · 작은 매트 도판 */
 .video{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#000}
 .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
