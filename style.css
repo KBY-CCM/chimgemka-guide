@@ -82,6 +82,17 @@ a.more img{border-radius:5px;margin-bottom:8px}
 a.more .t{font-family:var(--display);font-size:20px;line-height:1.25;color:var(--yellow)}
 a.more .s{color:var(--muted);font-size:14.5px}
 
+/* 홈 첫 섹션: 제목–도판–설명을 한 묶음으로, 다음 섹션과는 넉넉히 */
+.intro{gap:10px;margin-bottom:22px}
+.intro-body{display:grid;grid-template-columns:minmax(0,330px) minmax(0,1fr);gap:12px 26px;align-items:start}
+.intro-text{display:flex;flex-direction:column;gap:16px}
+.intro-text .blk{display:flex;flex-direction:column;gap:4px}
+.k{font-weight:900;letter-spacing:.05em;margin-right:7px}
+.k.ph{color:var(--orange)} .k.gm{color:var(--pink)}
+@media (max-width:640px){.intro-body{grid-template-columns:minmax(0,1fr)}}
+a.more.one{max-width:420px}
+.line-link a{color:var(--ink);font-weight:700;text-underline-offset:3px}
+
 /* 다섯 가지 */
 .five{list-style:none;margin:0;padding:0;counter-reset:n}
 .five li{counter-increment:n;display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line)}
