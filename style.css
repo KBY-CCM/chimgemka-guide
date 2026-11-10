@@ -83,15 +83,38 @@ a.more .t{font-family:var(--display);font-size:20px;line-height:1.25;color:var(-
 a.more .s{color:var(--muted);font-size:14.5px}
 
 /* 홈 첫 섹션: 제목–도판–설명을 한 묶음으로, 다음 섹션과는 넉넉히 */
-.intro{gap:10px;margin-bottom:22px}
-.intro-body{display:grid;grid-template-columns:minmax(0,330px) minmax(0,1fr);gap:12px 26px;align-items:start}
-.intro-text{display:flex;flex-direction:column;gap:16px}
-.intro-text .blk{display:flex;flex-direction:column;gap:4px}
+.intro{gap:10px}
+.blk{display:flex;flex-direction:column;gap:4px;min-width:0}
 .k{font-weight:900;letter-spacing:.05em;margin-right:7px}
 .k.ph{color:var(--orange)} .k.gm{color:var(--pink)}
-@media (max-width:640px){.intro-body{grid-template-columns:minmax(0,1fr)}}
 a.more.one{max-width:420px}
-.line-link a{color:var(--ink);font-weight:700;text-underline-offset:3px}
+
+/* 카드 한 장 뜯어보기 */
+.anat-sec{margin-bottom:22px}
+.anat{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:14px 26px;align-items:start}
+.anat-left{display:flex;flex-direction:column;gap:8px;min-width:0}
+.anat-card{position:relative;line-height:0}
+.anat-card img{width:100%;border-radius:14px}
+.hs{position:absolute;border:2px solid transparent;border-radius:4px;background:transparent;padding:0;cursor:pointer}
+.hs i{position:absolute;left:-9px;top:-9px;width:20px;height:20px;border-radius:50%;background:var(--pink);color:#fff;font:700 11px/20px var(--body);text-align:center;box-shadow:0 0 0 2px #0b0a0e}
+.hs:hover,.hs.on{border-color:var(--yellow);background:rgba(255,212,59,.2)}
+.hs.on i{background:var(--yellow);color:#000}
+.hs:focus-visible{outline:2px solid var(--yellow);outline-offset:2px}
+.anat-now{min-height:4.6em;border-left:3px solid var(--yellow);background:rgba(255,212,59,.06);padding:7px 12px;font-size:14.5px;line-height:1.5}
+.anat-now b{color:var(--yellow)}
+.anat-list{list-style:none;margin:0;padding:0;counter-reset:a;border-top:1px solid var(--line)}
+.anat-list li{counter-increment:a;border-bottom:1px solid var(--line)}
+.anat-list button{display:grid;grid-template-columns:22px minmax(0,1fr);column-gap:8px;width:100%;text-align:left;background:none;border:0;border-left:3px solid transparent;color:inherit;font:inherit;padding:6px 6px 6px 6px;cursor:pointer}
+.anat-list button::before{content:counter(a);grid-row:1 / span 2;color:var(--pink);font-weight:900}
+.anat-list b,.anat-list span{grid-column:2}
+.anat-list span{color:var(--muted);font-size:14px}
+.anat-list li.on button{border-left-color:var(--yellow);background:rgba(255,212,59,.06)}
+.anat-list li.on button::before{color:var(--yellow)}
+.anat-list button:focus-visible{outline:2px solid var(--yellow);outline-offset:-2px}
+@media (max-width:640px){
+  .anat{grid-template-columns:minmax(0,1fr)}
+  .anat-left{width:100%;max-width:320px;margin-inline:auto}
+}
 
 /* 다섯 가지 */
 .five{list-style:none;margin:0;padding:0;counter-reset:n}
