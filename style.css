@@ -199,3 +199,6 @@ details p{padding:0 0 11px 18px;color:#d4cede;font-size:14.5px}
 
 footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}
 footer .wrap{padding-block:16px 28px;display:flex;flex-direction:column;gap:2px}
+
+/* 공개 예정 버튼 */
+.soon{display:inline-block;font-weight:900;font-size:16px;color:var(--muted);border:1.5px dashed #4a4458;padding:11px 22px;border-radius:8px}
