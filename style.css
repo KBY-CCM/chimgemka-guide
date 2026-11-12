@@ -204,7 +204,6 @@ footer .wrap{padding-block:16px 28px;display:flex;flex-direction:column;gap:2px}
 .soon{display:inline-block;font-weight:900;font-size:16px;color:var(--muted);border:1.5px dashed #4a4458;padding:11px 22px;border-radius:8px}
 
 /* 온라인 플레이 바로가기 */
-.top nav a.ext{color:var(--yellow)}
 .top nav{flex-wrap:nowrap;white-space:nowrap}
 @media (max-width:430px){.top nav{gap:11px}.top nav a{font-size:13px}.brand{font-size:17px}}
 a.sim{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:var(--muted);font-size:14.5px}
