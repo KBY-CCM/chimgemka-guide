@@ -260,3 +260,9 @@ section.ban h2{color:var(--pink)}
 .zone{gap:28px}
 .zone-head,.zone>section{padding:20px 18px 22px}
 .sec-head{margin-bottom:10px}
+
+/* 상단 목차: 두 갈래만 */
+.toc.two{flex-direction:row;flex-wrap:wrap;align-items:baseline;gap:4px 10px;border:0;padding:0;font-size:14.5px}
+.toc.two span{min-width:0;color:#4a4458;font-weight:400}
+.toc.two a{font-weight:700;border-bottom:1px solid #4a4458}
+.toc.two small{font-weight:400;color:var(--muted);font-size:13px}
