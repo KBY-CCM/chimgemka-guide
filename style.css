@@ -249,3 +249,9 @@ section.warn .panel{border-top-color:rgba(255,46,139,.4)}
 .ztoc a.hot{color:var(--pink);font-weight:700;text-decoration-color:var(--pink)}
 .ztoc a.hot span{font-size:12px;font-weight:700;color:var(--bg);background:var(--pink);padding:1px 6px;border-radius:3px;margin-left:6px;text-decoration:none;display:inline-block}
 section.ban h2{color:var(--pink)}
+
+/* 더 알아보기: 목차 한 덩어리 + 섹션마다 따로 */
+.zone{background:none;border:0;border-radius:0;padding:0;gap:14px}
+.zone-head,.zone>section{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px 16px 18px}
+.zone-head{display:flex;flex-direction:column;gap:10px}
+.zone-head .ztoc{margin-top:0}
