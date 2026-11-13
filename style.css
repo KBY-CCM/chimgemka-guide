@@ -255,3 +255,8 @@ section.ban h2{color:var(--pink)}
 .zone-head,.zone>section{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px 16px 18px}
 .zone-head{display:flex;flex-direction:column;gap:10px}
 .zone-head .ztoc{margin-top:0}
+
+/* 박스 사이 간격, 제목 묶음과 본문 사이 간격 */
+.zone{gap:28px}
+.zone-head,.zone>section{padding:20px 18px 22px}
+.sec-head{margin-bottom:10px}
