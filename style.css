@@ -218,3 +218,21 @@ section>h3{margin-top:6px}
 .lane.sp .c{aspect-ratio:5/3.3;font-size:9.5px}
 .lane.sp .c.dn{background:linear-gradient(160deg,#ffb043,#ee8612)}
 .c.flip{background:#f7f4fb;border:3px solid var(--cyan);color:#1a1722;outline:3px solid var(--yellow);outline-offset:2px;border-style:solid}
+
+/* 목차 */
+.toc{display:flex;flex-direction:column;gap:5px;font-size:14px;border:1px solid var(--line);border-radius:6px;padding:10px 14px}
+.toc div{display:flex;flex-wrap:wrap;gap:3px 14px;align-items:baseline}
+.toc span{color:var(--muted);font-weight:700;min-width:74px}
+.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid #4a4458}
+.toc a:hover{border-bottom-color:var(--ink)}
+.toc a.hot{color:var(--pink);font-weight:700;border-bottom-color:var(--pink)}
+[id]{scroll-margin-top:56px}
+/* 못 쓰는 카드: 강조 */
+section.warn{border:2px solid var(--pink);border-radius:8px;padding:16px 16px 18px;background:rgba(255,46,139,.07)}
+section.warn h2{color:var(--pink)}
+section.warn .sec-head{border-bottom-color:rgba(255,46,139,.4)}
+section.warn .panel{border-top-color:rgba(255,46,139,.4)}
+/* 더 알아보기: 본문과 분리된 영역 */
+.zone{display:flex;flex-direction:column;gap:30px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px 16px 22px;margin-top:18px}
+.zone-t{font-family:var(--display);font-size:17px;color:var(--muted);letter-spacing:.03em}
+.zone h2{font-size:clamp(19px,4vw,22px)}

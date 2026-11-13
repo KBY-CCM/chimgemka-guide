@@ -7,7 +7,7 @@
 <meta name="description" content="침착맨 포토 게임 카드 심플 룰. 상대가 낼 카드를 예측해서 내 카드를 미리 깔아 두는 예측 가위바위보 게임입니다.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
-<link rel="stylesheet" href="style.css?v=17">
+<link rel="stylesheet" href="style.css?v=18">
 </head>
 <body>
 
@@ -27,6 +27,12 @@
 </div></div>
 
 <main class="wrap">
+
+<nav class="toc" aria-label="이 페이지 목차">
+  <div><span>게임 방법</span><a href="#prep">준비</a><a href="#flow">게임 순서</a><a href="#judge">전투 판정</a><a href="#win">승리 조건</a></div>
+  <div><span>꼭 확인</span><a class="hot" href="#ban">심플 룰에서 못 쓰는 카드</a></div>
+  <div><span>더 알아보기</span><a href="#diff">기본 룰과 다른 점</a><a href="#read">카드 문구 읽는 법</a><a href="#faq">자주 묻는 질문</a></div>
+</nav>
 
 <section>
   <div class="sec-head"><h2>플레이 영상으로 이해하기</h2>
@@ -48,7 +54,7 @@
 <p class="part">게임 방법</p>
 
 <section>
-  <div class="sec-head"><h2>1. 준비</h2></div>
+  <div class="sec-head"><h2 id="prep">1. 준비</h2></div>
   <h3>카드 고르기</h3>
   <ul class="plain">
     <li>1:1로 합니다. 각자 카드 <b>10장</b>을 고릅니다.</li>
@@ -56,6 +62,7 @@
     <li>나머지는 <b>전투카드</b>입니다. 카드에 특수 효과가 적혀 있어도 전투카드로 낸 카드는 가위바위보와 침투력만 씁니다.</li>
   </ul>
   <div class="note"><b>SSR 카드는 심플 룰에서 사용할 수 없습니다.</b> 가위바위보를 마음대로 고를 수 있어 승부가 한쪽으로 기울기 때문입니다. SSR의 힘은 <a href="advanced.html">기본 룰</a>에서 확인해 보세요.</div>
+  <p class="sub">SSR 말고도 심플 룰에서 특수카드로 못 쓰는 카드가 있습니다. <a href="#ban">목록 보기</a></p>
 
   <h3>판 깔기</h3>
   <p>특수카드는 각자 <b>특수 구역에 뒷면으로</b> 깔아 둡니다. 전투카드는 손에 들고 시작합니다.</p>
@@ -71,7 +78,7 @@
 </section>
 
 <section>
-  <div class="sec-head"><h2>2. 게임 순서</h2></div>
+  <div class="sec-head"><h2 id="flow">2. 게임 순서</h2></div>
   <div class="legend"><span>분홍 테두리 = 상대 카드</span><span>파랑 테두리 = 내 카드</span><span>주황 = 뒷면으로 놓인 카드</span></div>
   <ol class="steps">
     <li>
@@ -137,7 +144,7 @@
 </section>
 
 <section>
-  <div class="sec-head"><h2>3. 전투 판정</h2>
+  <div class="sec-head"><h2 id="judge">3. 전투 판정</h2>
   <p class="muted">왼쪽부터 차례로 비교하고, 승부가 나면 거기서 끝납니다.</p></div>
   <div class="flow">
     <div><b>가위바위보</b><span>카드에 적힌 것으로 승부</span></div><i>비기면 ▶</i>
@@ -148,51 +155,12 @@
 </section>
 
 <section>
-  <div class="sec-head"><h2>4. 승리 조건</h2></div>
+  <div class="sec-head"><h2 id="win">4. 승리 조건</h2></div>
   <p>상대의 손과 외줄에 있는 <b>전투카드를 모두 무덤으로</b> 보내면 승리합니다.</p>
   <p class="sub">외줄 6칸을 모두 내 카드로 채워도 승리합니다. 드물지만 가능합니다.</p>
 </section>
 
-<section>
-  <div class="sec-head"><h2>온라인으로 플레이하기</h2>
-  <p class="muted">심플 룰 온라인 플레이는 시즌 4 출시일에 맞춰 공개될 예정입니다.</p></div>
-  <div class="btns"><span class="soon">🎮 플레이하러 가기 · 공개 예정</span></div>
-</section>
-
-<p class="part">더 알아보기</p>
-
-<section>
-  <div class="sec-head"><h2>기본 룰과 다른 점</h2>
-  <p class="muted">한 턴에 전투는 한 번. 기본 룰은 둘 다 특수카드를 쓰고, 심플 룰은 카드를 낸 사람만 씁니다.</p></div>
-  <div class="tw"><table>
-    <tr><th></th><th>기본 룰</th><th>심플 룰</th></tr>
-    <tr><td>한 턴의 행동</td><td>전투(동시 공개) → 진 사람 특수카드 1회 → 이긴 사람 특수카드 1회 → 빈칸 채우기</td><td>전투카드 내기 1회(필수) + 특수카드 사용 1회(선택)</td></tr>
-    <tr><td>특수카드 타이밍</td><td>전투가 끝난 뒤 결과를 뒤집습니다</td><td>전투 전에 미리 판을 바꿉니다</td></tr>
-    <tr><td>상대 특수에 대응</td><td>받아칠 수 있습니다</td><td>할 수 없습니다</td></tr>
-    <tr><td>채우기 룰</td><td>승부가 끝나면 전투·특수 구역의 빈칸에 손패 1장을 반드시 채웁니다</td><td>없습니다. 내 차례마다 손에서 전투카드 1장을 냅니다</td></tr>
-  </table></div>
-</section>
-
-<section>
-  <div class="sec-head"><h2>카드 문구 읽는 법</h2>
-  <p class="muted">카드의 특수 효과는 기본 룰 기준으로 적혀 있습니다. 심플 룰에서는 아래처럼 읽으면 됩니다.</p></div>
-  <div class="tw"><table>
-    <tr><th>카드에 적힌 말</th><th>심플 룰에서는</th></tr>
-    <tr><td>이번 턴</td><td>이 카드를 낸 내 차례. 카드 1장을 내고 그 전투가 끝날 때까지입니다.</td></tr>
-    <tr><td>다음 턴</td><td>바로 다음에 오는 상대 차례</td></tr>
-    <tr><td>선두</td><td>외줄 맨 앞, 상대와 맞닿는 카드</td></tr>
-    <tr><td>둘째·셋째 카드</td><td>외줄에서 선두 뒤로 센 순서</td></tr>
-    <tr><td>전투 구역</td><td>외줄 위에 놓인 카드들</td></tr>
-    <tr><td>특수 구역</td><td>특수카드를 깔아 두는 3칸입니다. 뒷면 카드만 쓸 수 있고, 앞면 카드는 더 쓸 수 없습니다. 특수카드를 3장보다 적게 골랐다면 남는 칸이 빈자리입니다.</td></tr>
-  </table></div>
-  <div class="panel ex">
-    <h3>예시</h3>
-    <p><b>오!마이아이즈!</b> <q>"상대의 선두를 특수구역 빈자리로. 자리가 없으면 손패로"</q><br>→ 상대 특수 구역에 빈자리가 있으면 상대 선두가 그 칸에 앞면으로 놓이고, 자리만 차지할 뿐 더는 쓸 수 없습니다. 빈자리가 없으면 손패로 돌아갑니다.</p>
-    <p><b>뿔난이병건</b> <q>"다음 턴, 상대는 특수카드를 발동할 수 없다"</q><br>→ 바로 다음 상대 차례에 상대는 특수카드를 쓸 수 없습니다.</p>
-  </div>
-</section>
-
-<section>
+<section class="warn" id="ban">
   <div class="sec-head"><h2>심플 룰에서 못 쓰는 카드</h2>
   <p class="muted">효과가 기본 룰에서만 성립하는 카드입니다. 두 종류로 나뉩니다.</p></div>
   <div class="panel">
@@ -212,7 +180,47 @@
 </section>
 
 <section>
-  <div class="sec-head"><h2>자주 묻는 질문</h2></div>
+  <div class="sec-head"><h2 id="online">온라인으로 플레이하기</h2>
+  <p class="muted">심플 룰 온라인 플레이는 시즌 4 출시일에 맞춰 공개될 예정입니다.</p></div>
+  <div class="btns"><span class="soon">🎮 플레이하러 가기 · 공개 예정</span></div>
+</section>
+
+<div class="zone" id="more">
+<p class="zone-t">더 알아보기</p>
+
+<section>
+  <div class="sec-head"><h2 id="diff">기본 룰과 다른 점</h2>
+  <p class="muted">한 턴에 전투는 한 번. 기본 룰은 둘 다 특수카드를 쓰고, 심플 룰은 카드를 낸 사람만 씁니다.</p></div>
+  <div class="tw"><table>
+    <tr><th></th><th>기본 룰</th><th>심플 룰</th></tr>
+    <tr><td>한 턴의 행동</td><td>전투(동시 공개) → 진 사람 특수카드 1회 → 이긴 사람 특수카드 1회 → 빈칸 채우기</td><td>전투카드 내기 1회(필수) + 특수카드 사용 1회(선택)</td></tr>
+    <tr><td>특수카드 타이밍</td><td>전투가 끝난 뒤 결과를 뒤집습니다</td><td>전투 전에 미리 판을 바꿉니다</td></tr>
+    <tr><td>상대 특수에 대응</td><td>받아칠 수 있습니다</td><td>할 수 없습니다</td></tr>
+    <tr><td>채우기 룰</td><td>승부가 끝나면 전투·특수 구역의 빈칸에 손패 1장을 반드시 채웁니다</td><td>없습니다. 내 차례마다 손에서 전투카드 1장을 냅니다</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <div class="sec-head"><h2 id="read">카드 문구 읽는 법</h2>
+  <p class="muted">카드의 특수 효과는 기본 룰 기준으로 적혀 있습니다. 심플 룰에서는 아래처럼 읽으면 됩니다.</p></div>
+  <div class="tw"><table>
+    <tr><th>카드에 적힌 말</th><th>심플 룰에서는</th></tr>
+    <tr><td>이번 턴</td><td>이 카드를 낸 내 차례. 카드 1장을 내고 그 전투가 끝날 때까지입니다.</td></tr>
+    <tr><td>다음 턴</td><td>바로 다음에 오는 상대 차례</td></tr>
+    <tr><td>선두</td><td>외줄 맨 앞, 상대와 맞닿는 카드</td></tr>
+    <tr><td>둘째·셋째 카드</td><td>외줄에서 선두 뒤로 센 순서</td></tr>
+    <tr><td>전투 구역</td><td>외줄 위에 놓인 카드들</td></tr>
+    <tr><td>특수 구역</td><td>특수카드를 깔아 두는 3칸입니다. 뒷면 카드만 쓸 수 있고, 앞면 카드는 더 쓸 수 없습니다. 특수카드를 3장보다 적게 골랐다면 남는 칸이 빈자리입니다.</td></tr>
+  </table></div>
+  <div class="panel ex">
+    <h3>예시</h3>
+    <p><b>오!마이아이즈!</b> <q>"상대의 선두를 특수구역 빈자리로. 자리가 없으면 손패로"</q><br>→ 상대 특수 구역에 빈자리가 있으면 상대 선두가 그 칸에 앞면으로 놓이고, 자리만 차지할 뿐 더는 쓸 수 없습니다. 빈자리가 없으면 손패로 돌아갑니다.</p>
+    <p><b>뿔난이병건</b> <q>"다음 턴, 상대는 특수카드를 발동할 수 없다"</q><br>→ 바로 다음 상대 차례에 상대는 특수카드를 쓸 수 없습니다.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><h2 id="faq">자주 묻는 질문</h2></div>
   <details><summary>상대가 특수카드를 썼을 때 무효화할 수 없나요?</summary><p>심플 룰에서는 할 수 없습니다. 특수카드는 내 차례에만 쓸 수 있어요. 받아치고 뒤집는 재미는 기본 룰에서 즐길 수 있습니다.</p></details>
   <details><summary>전투카드를 내지 않고 특수카드만 쓸 수 있나요?</summary><p>안 됩니다. 특수카드는 항상 전투카드를 내면서 씁니다. 손에 전투카드가 없으면 특수카드도 쓸 수 없습니다.</p></details>
   <details><summary>특수 효과가 적힌 카드를 전투카드로 내면 효과가 발동하나요?</summary><p>발동하지 않습니다. 시작 전에 특수로 정한 카드만 효과를 씁니다. 다만 "내 선두의 특수 효과를 발동시킨다"처럼 다른 카드의 효과를 깨우는 특수카드를 쓰면 그때는 발동합니다.</p></details>
@@ -221,6 +229,8 @@
   <details><summary>특수카드를 쓴 차례에 전투가 일어나지 않으면요?</summary><p>"이번 턴" 효과는 그 차례가 끝나면 사라집니다. 전투가 일어날 타이밍에 맞춰 쓰는 것이 요령입니다.</p></details>
   <details><summary>시즌이 다른 카드를 섞어도 되나요?</summary><p>됩니다. 시즌1 카드는 크기가 조금 다르지만 플레이에는 문제가 없습니다.</p></details>
 </section>
+
+</div>
 
 <section>
   <div class="btns">
