@@ -213,3 +213,8 @@ a.sim:hover span{color:var(--ink)}
 /* 페이지 큰 구분 */
 .part{font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.04em;border-top:1px solid var(--line);padding-top:14px;margin-bottom:-22px}
 section>h3{margin-top:6px}
+
+/* 특수 구역 줄: 낮은 카드 */
+.lane.sp .c{aspect-ratio:5/3.3;font-size:9.5px}
+.lane.sp .c.dn{background:linear-gradient(160deg,#ffb043,#ee8612)}
+.c.flip{background:#f7f4fb;border:3px solid var(--cyan);color:#1a1722;outline:3px solid var(--yellow);outline-offset:2px;border-style:solid}
