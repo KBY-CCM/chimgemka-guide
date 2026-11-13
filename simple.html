@@ -7,7 +7,7 @@
 <meta name="description" content="침착맨 포토 게임 카드 심플 룰. 상대가 낼 카드를 예측해서 내 카드를 미리 깔아 두는 예측 가위바위보 게임입니다.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
-<link rel="stylesheet" href="style.css?v=18">
+<link rel="stylesheet" href="style.css?v=19">
 </head>
 <body>
 
@@ -28,10 +28,8 @@
 
 <main class="wrap">
 
-<nav class="toc" aria-label="이 페이지 목차">
-  <div><span>게임 방법</span><a href="#prep">준비</a><a href="#flow">게임 순서</a><a href="#judge">전투 판정</a><a href="#win">승리 조건</a></div>
-  <div><span>꼭 확인</span><a class="hot" href="#ban">심플 룰에서 못 쓰는 카드</a></div>
-  <div><span>더 알아보기</span><a href="#diff">기본 룰과 다른 점</a><a href="#read">카드 문구 읽는 법</a><a href="#faq">자주 묻는 질문</a></div>
+<nav class="toc one" aria-label="이 페이지 목차">
+  <a href="#prep">1. 준비</a><a href="#flow">2. 게임 순서</a><a href="#judge">3. 전투 판정</a><a href="#win">4. 승리 조건</a><a href="#online">온라인으로 플레이하기</a><a href="#more">더 알아보기</a>
 </nav>
 
 <section>
@@ -58,7 +56,7 @@
   <h3>카드 고르기</h3>
   <ul class="plain">
     <li>1:1로 합니다. 각자 카드 <b>10장</b>을 고릅니다.</li>
-    <li>10장 중 <b>3장까지 특수카드로</b> 정합니다. (3장보다 덜 사용해도 됩니다.) 특수 효과가 적힌 카드만 고를 수 있어요.</li>
+    <li>10장 중 <b>3장까지 특수카드로</b> 정합니다. 0장도 가능합니다. 특수 효과가 적힌 카드만 특수카드로 정할 수 있고, 한 번 정한 카드는 게임 마무리까지 바꿀 수 없습니다.</li>
     <li>나머지는 <b>전투카드</b>입니다. 카드에 특수 효과가 적혀 있어도 전투카드로 낸 카드는 가위바위보와 침투력만 씁니다.</li>
   </ul>
   <div class="note"><b>SSR 카드는 심플 룰에서 사용할 수 없습니다.</b> 가위바위보를 마음대로 고를 수 있어 승부가 한쪽으로 기울기 때문입니다. SSR의 힘은 <a href="advanced.html">기본 룰</a>에서 확인해 보세요.</div>
@@ -151,32 +149,13 @@
     <div><b>침투력</b><span>숫자가 높은 쪽 승리</span></div><i>같으면 ▶</i>
     <div><b>등급</b><span>V &gt; SR &gt; R &gt; N &gt; C 순</span></div>
   </div>
-  <p><b>도플갱어 룰:</b> 두 사람이 같은 카드를 내서 만나면 두 장 모두 무덤으로 갑니다.</p>
+  <p><b>도플갱어 룰:</b> 두 사람이 가위바위보, 침투력, 등급까지 똑같은 카드를 내서 만나면 두 장 모두 무덤으로 갑니다.</p>
 </section>
 
 <section>
   <div class="sec-head"><h2 id="win">4. 승리 조건</h2></div>
   <p>상대의 손과 외줄에 있는 <b>전투카드를 모두 무덤으로</b> 보내면 승리합니다.</p>
   <p class="sub">외줄 6칸을 모두 내 카드로 채워도 승리합니다. 드물지만 가능합니다.</p>
-</section>
-
-<section class="warn" id="ban">
-  <div class="sec-head"><h2>심플 룰에서 못 쓰는 카드</h2>
-  <p class="muted">효과가 기본 룰에서만 성립하는 카드입니다. 두 종류로 나뉩니다.</p></div>
-  <div class="panel">
-    <h3>특수카드로만 못 쓰는 카드</h3>
-    <p class="sub">특수카드로는 정할 수 없지만, <b>전투카드로는 쓸 수 있습니다.</b></p>
-    <p class="sub">상대 특수카드를 받아치는 카드 (심플 룰에는 상대 차례에 끼어드는 순서가 없습니다)</p>
-    <div class="chips"><span class="chip">패는남매</span><span class="chip">기강다이어트</span><span class="chip">원박특급</span><span class="chip">TOP3! 이거 어려운 거예요~?</span><span class="chip">300만 된 침착맨</span></div>
-    <p class="sub">카드의 자리를 바꾸거나 다시 배치하는 카드 (심플 룰에서는 전투카드와 특수카드의 역할이 끝까지 고정입니다)</p>
-    <div class="chips"><span class="chip">운동듀오</span><span class="chip">우웜뱃&amp;침피바라</span><span class="chip">천하인</span><span class="chip">레게전무</span><span class="chip">Medium 병건&amp;세화</span></div>
-  </div>
-  <div class="panel">
-    <h3>아예 쓸 수 없는 카드</h3>
-    <p class="sub">전투카드로도, 특수카드로도 쓸 수 없습니다.</p>
-    <div class="chips"><span class="chip">모든 시즌의 SSR 카드</span><span class="chip">새깅 하체</span></div>
-    <p class="sub">새깅 하체는 받아치는 카드인데 가위바위보도 없어서 전투카드로도 낼 수 없습니다.</p>
-  </div>
 </section>
 
 <section>
@@ -187,6 +166,12 @@
 
 <div class="zone" id="more">
 <p class="zone-t">더 알아보기</p>
+<nav class="ztoc" aria-label="더 알아보기 목차">
+  <a href="#diff">기본 룰과 다른 점</a>
+  <a href="#read">카드 문구 읽는 법</a>
+  <a class="hot" href="#ban">심플 룰에서 못 쓰는 카드 <span>게임 전에 꼭 확인</span></a>
+  <a href="#faq">자주 묻는 질문</a>
+</nav>
 
 <section>
   <div class="sec-head"><h2 id="diff">기본 룰과 다른 점</h2>
@@ -216,6 +201,25 @@
     <h3>예시</h3>
     <p><b>오!마이아이즈!</b> <q>"상대의 선두를 특수구역 빈자리로. 자리가 없으면 손패로"</q><br>→ 상대 특수 구역에 빈자리가 있으면 상대 선두가 그 칸에 앞면으로 놓이고, 자리만 차지할 뿐 더는 쓸 수 없습니다. 빈자리가 없으면 손패로 돌아갑니다.</p>
     <p><b>뿔난이병건</b> <q>"다음 턴, 상대는 특수카드를 발동할 수 없다"</q><br>→ 바로 다음 상대 차례에 상대는 특수카드를 쓸 수 없습니다.</p>
+  </div>
+</section>
+
+<section class="ban" id="ban">
+  <div class="sec-head"><h2>심플 룰에서 못 쓰는 카드</h2>
+  <p class="muted">효과가 기본 룰에서만 성립하는 카드입니다. 두 종류로 나뉩니다.</p></div>
+  <div class="panel">
+    <h3>특수카드로만 못 쓰는 카드</h3>
+    <p class="sub">특수카드로는 정할 수 없지만, <b>전투카드로는 쓸 수 있습니다.</b></p>
+    <p class="sub">상대 특수카드를 받아치는 카드 (심플 룰에는 상대 차례에 끼어드는 순서가 없습니다)</p>
+    <div class="chips"><span class="chip">패는남매</span><span class="chip">기강다이어트</span><span class="chip">원박특급</span><span class="chip">TOP3! 이거 어려운 거예요~?</span><span class="chip">300만 된 침착맨</span></div>
+    <p class="sub">카드의 자리를 바꾸거나 다시 배치하는 카드 (심플 룰에서는 전투카드와 특수카드의 역할이 끝까지 고정입니다)</p>
+    <div class="chips"><span class="chip">운동듀오</span><span class="chip">우웜뱃&amp;침피바라</span><span class="chip">천하인</span><span class="chip">레게전무</span><span class="chip">Medium 병건&amp;세화</span></div>
+  </div>
+  <div class="panel">
+    <h3>아예 쓸 수 없는 카드</h3>
+    <p class="sub">전투카드로도, 특수카드로도 쓸 수 없습니다.</p>
+    <div class="chips"><span class="chip">모든 시즌의 SSR 카드</span><span class="chip">새깅 하체</span></div>
+    <p class="sub">새깅 하체는 받아치는 카드인데 가위바위보도 없어서 전투카드로도 낼 수 없습니다.</p>
   </div>
 </section>
 

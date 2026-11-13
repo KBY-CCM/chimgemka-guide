@@ -236,3 +236,16 @@ section.warn .panel{border-top-color:rgba(255,46,139,.4)}
 .zone{display:flex;flex-direction:column;gap:30px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px 16px 22px;margin-top:18px}
 .zone-t{font-family:var(--display);font-size:17px;color:var(--muted);letter-spacing:.03em}
 .zone h2{font-size:clamp(19px,4vw,22px)}
+
+/* 게임 순서 그림: 특수 구역은 쓸 때만 눈에 띄게 */
+.steps .lane.sp .c.dn{background:#221f2b;border:1.5px solid #3d3849;box-shadow:none}
+.steps .lane.sp .c.dn.o{border-color:rgba(255,46,139,.35)}
+.steps .lane.sp .c.dn.m{border-color:rgba(34,184,255,.35)}
+/* 목차 */
+.toc.one{flex-direction:row;flex-wrap:wrap;gap:4px 16px}
+.ztoc{display:flex;flex-direction:column;gap:2px;border-left:2px solid var(--line);padding-left:12px;margin-top:-18px}
+.ztoc a{color:var(--muted);text-decoration:underline;text-decoration-color:#4a4458;text-underline-offset:3px;font-size:15px;padding:2px 0}
+.ztoc a:hover{color:var(--ink)}
+.ztoc a.hot{color:var(--pink);font-weight:700;text-decoration-color:var(--pink)}
+.ztoc a.hot span{font-size:12px;font-weight:700;color:var(--bg);background:var(--pink);padding:1px 6px;border-radius:3px;margin-left:6px;text-decoration:none;display:inline-block}
+section.ban h2{color:var(--pink)}
